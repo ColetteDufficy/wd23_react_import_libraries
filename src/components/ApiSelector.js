@@ -1,13 +1,22 @@
 import React from 'react';
 
-const ApiDataSelector = () => {
+const ApiDataSelector = ( {listOfDates} ) => {  // ineed to return a list of strings whoch are the dates in this case
+
+    const options = listOfDates.map((eachDate) => {
+        return (
+            <option key={eachDate} value={eachDate}> {eachDate} </option>
+        )
+    })
+    
 
     return (
+        <>
         <p>Api selctor goes here</p>
-        // <select onChange={handleChange}>
-        //     <option value="" disabled   selected >Choose from drop down menu</option>
-        //     {characterOptions}
-        // </select>
+        <select>
+            <option value="" disabled selected> Choose your date</option>
+            {options}
+        </select>
+        </>
     )
 }
 
