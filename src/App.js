@@ -6,16 +6,16 @@ import MyResponsiveAreaBump from './components/BumpChart';
 import MyResponsiveLine from './components/LineChart';
 import dataBump from './components/Data';
 import lineData from './components/LineData';
-import ApiData from './containers/ApiContainer';
+import ApiDataContainer from './containers/ApiContainer';
 
 function App() {
   
   return (
     <>
     <div id="apidata">
-      < ApiData/>
+      < ApiDataContainer/>
     </div>
-    
+
     <CodingLanguages />
     <div id="chart">
       < MyResponsiveAreaBump data={dataBump}/>
