@@ -36,6 +36,10 @@
   height: 300px;
 }
 
+#apidata {
+  height: 300px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
